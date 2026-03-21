@@ -95,20 +95,20 @@
 }
 
 .blog-date {
-  color: var(--text-secondary);
+  color: #666666;
   font-size: 0.9rem;
   font-style: italic;
 }
 
 .blog-card h2 {
-  color: var(--text-primary);
+  color: #000000;
   font-size: 1.3rem;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
 
 .blog-card p {
-  color: var(--text-secondary);
+  color: #333333;
   margin-bottom: 1.5rem;
   flex: 1;
   line-height: 1.6;
@@ -131,24 +131,41 @@
 .read-more {
   background-color: transparent;
   color: var(--accent-red);
-  border: 2px solid var(--accent-red);
-  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent-red);
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  user-select: none;
+  margin-left: auto;
+}
+
+.read-more:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
 }
 
 .read-more:hover:not(:disabled) {
   background-color: var(--accent-red);
   color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.read-more:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
 }
 
 .read-more:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
+  border-color: #999999;
+  color: #999999;
 }
 
 /* CTA Section */

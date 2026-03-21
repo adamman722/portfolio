@@ -4,6 +4,17 @@ export const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Just Fucking Use React (Or Any Framework, You Goddamn Luddite)",
+      excerpt:
+        "A passionate argument for when and why to use modern JavaScript frameworks. Addressing common misconceptions about complexity, performance, and the real challenges of building interactive web applications.",
+      date: "March 2026",
+      category: "React",
+      readTime: "15 min read",
+      link: "https://justfuckingusereact.com/",
+      full: true,
+    },
+    {
+      id: 2,
       title: "Vite 8.0 is out!",
       excerpt:
         "Vite 8 ships with Rolldown as its single, unified, Rust-based bundler, delivering up to 10-30x faster builds while maintaining full plugin compatibility. This is the most significant architectural change since Vite 2.",
@@ -14,34 +25,26 @@ export const Blog = () => {
       full: true,
     },
     {
-      id: 2,
-      title: "Coming Soon: Building Scalable React Applications",
-      excerpt:
-        "Exploring best practices and patterns for architecting large-scale React applications.",
-      date: "Upcoming",
-      category: "React",
-      readTime: "5 min read",
-      full: false,
-    },
-    {
       id: 3,
-      title: "Coming Soon: Component Library Design Patterns",
+      title: "Pokemon Cards V2: Advanced CSS 3D Effects",
       excerpt:
-        "Deep dive into creating maintainable and reusable component libraries.",
-      date: "Upcoming",
-      category: "Architecture",
-      readTime: "8 min read",
-      full: false,
+        "A stunning showcase of realistic Pokemon card effects using CSS 3D transforms, gradients, blend modes, and cursor-based interactions. Demonstrates advanced CSS techniques for creating dynamic, interactive UI.",
+      date: "March 2026",
+      category: "CSS",
+      readTime: "12 min read",
+      link: "https://poke-holo.simey.me/?ref=dailydev",
+      full: true,
     },
     {
       id: 4,
-      title: "Coming Soon: Automated Testing Strategies",
+      title: "Read That F*cking Code!",
       excerpt:
-        "Practical approaches to implementing comprehensive testing in your projects.",
-      date: "Upcoming",
-      category: "Testing",
-      readTime: "6 min read",
-      full: false,
+        "A critical guide on responsible vibe-coding with AI. Explores the risks of not reviewing AI-generated code and practical strategies for maintaining code quality, security, and architectural integrity while leveraging AI speed.",
+      date: "August 3, 2025",
+      category: "AI & Development",
+      readTime: "11 min read",
+      link: "https://etsd.tech/posts/rtfc/?ref=dailydev",
+      full: true,
     },
   ];
 
@@ -95,7 +98,7 @@ export const Blog = () => {
             Follow my social media for updates when new articles are published
           </p>
           <div className="social-preview">
-            <p>LinkedIn • Twitter • GitHub</p>
+            <p>LinkedIn • GitHub</p>
           </div>
         </section>
       </section>
