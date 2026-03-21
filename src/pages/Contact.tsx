@@ -82,8 +82,8 @@ export const Contact = () => {
       <section className="contact-container">
         <h1>Get In Touch</h1>
         <p className="contact-intro">
-          I'm always open to new opportunities and collaborations. Feel free to
-          reach out!
+          I'm Adam, and I'm always open to new opportunities and collaborations.
+          Feel free to reach out – I'd love to hear from you!
         </p>
 
         <div className="contact-content">

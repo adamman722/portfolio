@@ -53,8 +53,8 @@ export const Blog = () => {
       <section className="blog-container">
         <h1>Blog & Articles</h1>
         <p className="blog-intro">
-          Thoughts, insights, and tutorials about frontend development and
-          software architecture
+          Welcome to my corner of the web! Here, I share thoughts, insights, and
+          tutorials about frontend development and software architecture.
         </p>
 
         <div className="blog-empty-state">

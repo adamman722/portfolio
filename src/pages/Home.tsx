@@ -8,8 +8,8 @@ export const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="line">Welcome to My</span>
-            <span className="line accent">Digital Portfolio</span>
+            <span className="line">Hi, I'm Adam Tarpey</span>
+            <span className="line accent">Full-Stack Developer</span>
           </h1>
           <p className="hero-subtitle">
             Full-stack developer | React enthusiast | System architecture
@@ -55,9 +55,10 @@ export const Home = () => {
 
       {/* Call to Action */}
       <section className="cta-section">
-        <h2>Ready to Collaborate?</h2>
+        <h2>Ready to Work With Me?</h2>
         <p>
-          I'm always interested in hearing about new projects and opportunities.
+          I'm always excited to collaborate on new projects and opportunities.
+          Let's build something amazing together!
         </p>
         <Link to="/contact" className="btn btn-primary btn-large">
           Start a Conversation

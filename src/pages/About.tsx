@@ -10,13 +10,13 @@ export const About = () => {
           <div className="about-text">
             <h2>Who I Am</h2>
             <p>
-              I'm a bubbly and approachable developer with a passion for
-              accessibility and creating beautiful, engaging websites that scale
-              seamlessly across all devices. I believe in the power of clean
-              code, responsive design, and making technology accessible to
-              everyone. With a background ranging from automation to testing to
-              modern web development, I bring a unique perspective to every
-              project.
+              I'm Adam Tarpey, a bubbly and approachable developer with a
+              passion for accessibility and creating beautiful, engaging
+              websites that scale seamlessly across all devices. I believe in
+              the power of clean code, responsive design, and making technology
+              accessible to everyone. With a background ranging from automation
+              to testing to modern web development, I bring a unique perspective
+              to every project.
             </p>
 
             <h2>My Journey</h2>
