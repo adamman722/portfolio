@@ -137,6 +137,8 @@
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .read-more:hover:not(:disabled) {

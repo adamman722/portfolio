@@ -3,11 +3,11 @@ import "./Experience.css";
 export const Experience = () => {
   const experiences = [
     {
-      role: "Front End Developer II",
+      role: "Front-End Developer II",
       company: "UWM",
       period: "2021 - Present",
       description:
-        "Built and deployed three standalone microservices using React and NextJS, leveraging Module Federation to create cohesive micro-frontend applications Developed in-house React component library to standardize UI elements across 10+ applications, improving visual consistency and supporting developer efficiency. Collaborated with UX and architecture teams to design and launch three greenfield mortgage applications, improving user engagement and streamlining processes. Developed backend microservices using C#/.NET Core and EF Core, implementing REST and GraphQL APIs for seamless data transmission",
+        "Built and deployed three standalone microservices using React and Next.js, leveraging Module Federation to create cohesive micro-frontend applications. Developed an in-house React component library to standardize UI elements across 10+ applications, improving visual consistency and supporting developer efficiency. Collaborated with UX and architecture teams to design and launch three greenfield mortgage applications, improving user engagement and streamlining processes. Developed backend microservices using C#/.NET Core and EF Core, implementing REST and GraphQL APIs for seamless data transmission.",
       highlights: [
         "React & TypeScript",
         "NextJS",
@@ -21,7 +21,7 @@ export const Experience = () => {
       company: "UWM",
       period: "2022 - 2024",
       description:
-        "As part of the #1 training team I helped designed 8-week program on advanced front end development topics, equipping developers with in-depth knowledge to advance their careers. Collaborated as front end developer and technical trainer to develop curriculum for aspiring IT professionals, enhancing their skills for industry readiness.",
+        "As part of the #1 training team, I helped design an 8-week program on advanced front-end development topics, equipping developers with in-depth knowledge to advance their careers. Collaborated as a front-end developer and technical trainer to develop curriculum for aspiring IT professionals, enhancing their skills for industry readiness.",
       highlights: [
         "C# Backend",
         "React Frontend",

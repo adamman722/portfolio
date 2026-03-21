@@ -4,30 +4,44 @@ export const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Vite 8.0 is out!",
+      excerpt:
+        "Vite 8 ships with Rolldown as its single, unified, Rust-based bundler, delivering up to 10-30x faster builds while maintaining full plugin compatibility. This is the most significant architectural change since Vite 2.",
+      date: "March 12, 2026",
+      category: "Web Dev",
+      readTime: "8 min read",
+      link: "https://vite.dev/blog/announcing-vite8.html",
+      full: true,
+    },
+    {
+      id: 2,
       title: "Coming Soon: Building Scalable React Applications",
       excerpt:
         "Exploring best practices and patterns for architecting large-scale React applications.",
       date: "Upcoming",
       category: "React",
       readTime: "5 min read",
+      full: false,
     },
     {
-      id: 2,
+      id: 3,
       title: "Coming Soon: Component Library Design Patterns",
       excerpt:
         "Deep dive into creating maintainable and reusable component libraries.",
       date: "Upcoming",
       category: "Architecture",
       readTime: "8 min read",
+      full: false,
     },
     {
-      id: 3,
+      id: 4,
       title: "Coming Soon: Automated Testing Strategies",
       excerpt:
         "Practical approaches to implementing comprehensive testing in your projects.",
       date: "Upcoming",
       category: "Testing",
       readTime: "6 min read",
+      full: false,
     },
   ];
 
@@ -42,12 +56,7 @@ export const Blog = () => {
 
         <div className="blog-empty-state">
           <div className="empty-icon">📝</div>
-          <h2>Blog Coming Soon</h2>
-          <p>
-            I'm currently working on writing insightful articles about
-            development, architecture, and best practices.
-          </p>
-          <p>Check back soon for updates!</p>
+          <h2>Articles that I think are neat :)</h2>
         </div>
 
         <div className="blog-grid">
@@ -61,9 +70,20 @@ export const Blog = () => {
               <p>{post.excerpt}</p>
               <div className="blog-footer">
                 <span className="read-time">{post.readTime}</span>
-                <button className="read-more" disabled>
-                  Coming Soon
-                </button>
+                {post.full ? (
+                  <a
+                    href={post.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="read-more"
+                  >
+                    Read More →
+                  </a>
+                ) : (
+                  <button className="read-more" disabled>
+                    Coming Soon
+                  </button>
+                )}
               </div>
             </article>
           ))}
