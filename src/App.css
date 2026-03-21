@@ -1,0 +1,33 @@
+main {
+  min-height: calc(100vh - 200px);
+  background-color: rgba(10, 10, 10, 0.5);
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+
+/* Global responsive adjustments */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Smooth scroll on all sections */
+section {
+  scroll-behavior: smooth;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

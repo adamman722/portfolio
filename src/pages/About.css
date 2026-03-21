@@ -1,0 +1,150 @@
+.about {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container h1 {
+  font-size: clamp(2rem, 8vw, 3rem);
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  color: var(--accent-red);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-red);
+  padding-bottom: 0.5rem;
+}
+
+.about-text h2:first-of-type {
+  margin-top: 0;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.about-highlights {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 4px;
+  border-left: 4px solid var(--accent-red);
+  position: sticky;
+  top: 100px;
+}
+
+.about-highlights h3 {
+  color: var(--accent-red);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlights-list {
+  list-style: none;
+}
+
+.highlights-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.highlights-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.highlights-list h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.highlights-list p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Dark text on light backgrounds */
+.about-text,
+.about-text h2,
+.about-text p,
+.about-highlights,
+.about-highlights h3,
+.highlights-list h4,
+.highlights-list p {
+  color: #1a1a1a !important;
+}
+
+/* Override: light text for about-text on dark background */
+.about-text,
+.about-text h2,
+.about-text p {
+  color: inherit !important;
+}
+
+.about-text h2 {
+  color: var(--accent-red) !important;
+}
+
+.about-text p {
+  color: var(--text-secondary) !important;
+}
+
+/* Interests Section */
+.interests-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--accent-red);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-highlights {
+    position: static;
+  }
+
+  .about-container h1 {
+    margin-bottom: 2rem;
+  }
+
+  .interests-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+}
