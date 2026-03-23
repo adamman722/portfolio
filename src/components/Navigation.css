@@ -124,6 +124,9 @@
   .nav-menu.active {
     max-height: 300px;
   }
+  .nav-link {
+    color: black;
+  }
 
   .nav-link::after {
     display: none;
